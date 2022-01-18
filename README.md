@@ -7,79 +7,97 @@ The purpose of the analysis was to compile information regarding schools' perfor
 
 ## Results
 
-- How is the district summary affected?
+* How is the district summary affected?
 As can been seen in the images below, there were only slight differences in the `district_summary_df` using all data compared to the when it was performed with the scores omitted. The average math score for students in the district was 78.9. The average math score with the questionable scores omitted was 79.0. In the district summary using all scores was 75% and reduced slightly to 74.8% when the questionable scores were omitted. The average reading score for students was unchanged and remained at 81.9 in both district summaries. However, 86% passed reading in the district summary using all student scores and was slightly lower at 85.7% when the questionable scores were omitted.
 
 <img src ="images/district_summary_challenge.png">
+
 **District Summary from challenge**
 
 
 <img src="images/district_summary_challenge.png">
+
 **District Summary from module**
 
 
-- How is the school summary affected?
+* How is the school summary affected?
 Below are images of the `per_school_summary_df` performed during the challenge, in which the ninth-grade scores from Thomas High School were removed, and the analysis performed during the module, which includes all student scores. Since Thomas High School is the only school with questionable scores, the differences in the two school summaries are limited to Thomas High School. The average scores and percent of students passing were slightly higher when all student scores were included in the analysis. The average math score was 0.067 higher, the average reading score was 0.047 higher, the percent of students passing math was 0.086% higher, the percentage of students passing reading was 0.290% higher, and the percentage of students passing both was 0.318% higher when all student scores were included compared to when the scores in question were removed due to potential academic dishonesty.
 
 
 <img src="images/school_summary_10th_12th_challenge.png">
+
 **School Summary from challenge**
 
 
 <img src="images/school_summary_module.png">
+
 **School Summary from module**
 
-- How does replacing the ninth graders' math and reading scores affect Thomas High School's performance relative to others schools?
+* How does replacing the ninth graders' math and reading scores affect Thomas High School's performance relative to others schools?
 Replacing the ninth graders' math and reading scores did not have a significant affect on Thomas High School's performance relative to other schools. School performance was determined by the `% Overall Passing` column. As discussed earlier, the percentage of students passing both math and reading from Thomas High School was slightly higher when all student scores were included in the analysis. However, Thomas High School remains the second top performing high school in the district regardless if the scores are omitted from the analysis. 
 
 <img src="images/top_schools_challenge.png">
+
 **Top Schools from challenge**
 
 <img src="images/top_schools_module.png">
+
 **Top Schools from module**
 
 
-- How does replacing the ninth-grade scores affect the following:
-	- Math and reading scores by grade
+* How does replacing the ninth-grade scores affect the following:
+	* Math and reading scores by grade
 	The analysis of the math and reading scores by grade are unaffected because we presented the scores by school. Therefore, the only 				difference is that the 9th grade math and reading scores for Thomas High School show "nan" or no value. 
 
 <img src="images/math_scores_by_grade_challenge.png">
+
 **Math Scores by Grade from challenge**
+
 <img src="images/reading_scores_by_grade_challenge.png">
+
 **Reading Scores by Grade from challenge**
 
 
 <img src="images/math_scores_by_grade_module.png">
+
 **Math Scores by Grade from module**
+
 <img src="images/reading_scores_by_grade_module.png">
+
 **Reading Scores by Grade from module**
 
-	- Scores by school spending
+* Scores by school spending
 There was no difference in the scores by school spending when the formatted DataFrames are reviewed. Thomas High School falls into the spending range of $630-644 and that is the bin that would have an expected effect. However, in the formatted DataFrame, average math score, average reading score, and passing percentages all remained the same regardless of whether the scores were included or not. When you review the unformatted DataFrames, there is a slight difference when the ninth grade scores are removed. For example, the average math score without the scores included is 78.502 and 78.518 when the scores are excluded. Both these scores round to 78.5 in the final DataFrame presented. 
 
 <img src="images/spending_summary_challenge.png">
+
 **Spending Summary from challenge (formatted)**
 
 <img src="images/spending_summary_module.png">
+
 **Spending Summary from module (formatted)**
 
 <img src="images/spending_summary__unformatted_challenge.png">
+
 **Spending Summary from challenge (unformatted)**
 
 <img src="images/spending_summary_unformatted_module.png">
+
 **Spending Summary from module (unformatted)**
 
-	- Scores by school size
+* Scores by school size
 There was no difference in the scores by school size either. Thomas High School falls into the Medium (1000-2000) size range. However, the scores and passing percentages for the Medium size range remained the same regardless of whether or not the questionable scores were included. 
 
 <img src="images/size_summary_challenge.png">
+
 **Size Summary from challenge**
 
 <img src="images/size_summary_module.png">
+
 **Size Summary from module**
 
 
-	- Scores by school type
+* Scores by school type
 Lastly, the scores by school type remained unaffected by the removal of the ninth grade scores from Thomas High School. Thomas High School is charter school so that would be the row in which a change would be expected. However, due to the overall small difference in average scores and passing percentages when the scores were removed, the overall scores and passing percentages based on school type were unaffected. 
 
 <img src="images/type_summary_challenge.png">
