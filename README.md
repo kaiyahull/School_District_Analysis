@@ -83,9 +83,11 @@ There was no difference in the scores by school size either. Thomas High School 
 Lastly, the scores by school type remained unaffected by the removal of the ninth grade scores from Thomas High School. Thomas High School is charter school so that would be the row in which a change would be expected. However, due to the overall small difference in average scores and passing percentages when the scores were removed, the overall scores and passing percentages based on school type were unaffected. 
 
 <img src="images/type_summary_challenge.png">
+
 **Type Summary from challenge**
 
 <img src="images/type_summary_module.png">
+
 **Type Summary from module**
 
 
