@@ -77,7 +77,7 @@ There was no difference in the scores by school spending when the formatted Data
 
 **Spending Summary from module (formatted)**
 
-<img src="images/spending_summary__unformatted_challenge.png">
+<img src="images/spending_summary_unformatted_challenge.png">
 
 **Spending Summary from challenge (unformatted)**
 
